@@ -1,12 +1,4 @@
-/*
-Assessment Requirements
-1. Create a variable that can hold a number of NFT's. What type of variable might this be?
-2. Create an object inside your mintNFT function that will hold the metadata for your NFTs. 
-   The metadata values will be passed to the function as parameters. When the NFT is ready, 
-   you will store it in the variable you created in step 1
-3. Your listNFTs() function will print all of your NFTs metadata to the console (i.e. console.log("Name: " + someNFT.name))
-4. For good measure, getTotalSupply() should return the number of NFT's you have created
-*/
+
 
 // create a variable to hold your NFT's
 
@@ -15,12 +7,12 @@ const NFTs=[]
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT (_name,_eyeColor,_shirtType,_bling) {
+function mintNFT (_name,_shirt,_pants,_shoes) {
     const NFT= {
         "name": _name,
-        "eyeColor":_eyeColor,
-        "shirtType":_shirtType,
-        "bling":_bling
+        "Shirt":_shirt,
+        "Pants":_pants,
+        "Shoes":_shoes
 
     }
     NFTs.push(NFT);
@@ -33,9 +25,9 @@ function listNFTs () {
  for(let i=0; i < NFTs.length; i++){
     console.log("\nID: \t\t"+ (i+1))
     console.log("Name: \t\t"+ NFTs[i].name);
-    console.log("Eyecolor: \t" + NFTs[i].eyeColor);
-    console.log("ShirtType: " + NFTs[i].shirtType);
-    console.log("Bling: \t\t " + NFTs[i].bling);
+    console.log("Shirt: \t" + NFTs[i].shirt);
+    console.log("Pants: " + NFTs[i].pants);
+    console.log("Shoes: \t\t " + NFTs[i].shoes);
  }
 }
 
@@ -45,9 +37,9 @@ console.log(NFTs.length);
 }
 
 // call your functions below this line
-mintNFT("Bob","Blue","Hoodie","Gold Chain");
-mintNFT("Sue","Blue","Hoodie","Gold Chain");
-mintNFT("Tim","Blue","Hoodie","Gold Chain");
+mintNFT("Fhiel","Blue","Hoodie","Gold Chain");
+mintNFT("Nichole","Blue","Hoodie","Gold Chain");
+mintNFT("Ashley","Blue","Hoodie","Gold Chain");
 mintNFT("John","Blue","Hoodie","Gold Chain");
 listNFTs();
 getTotalSupply();
