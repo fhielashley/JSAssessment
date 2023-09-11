@@ -23,11 +23,11 @@ function mintNFT (_name,_shirt,_pants,_shoes) {
 // and print their metadata with console.log()
 function listNFTs () {
  for(let i=0; i < NFTs.length; i++){
-    console.log("\nID: \t\t"+ (i+1))
-    console.log("Name: \t\t"+ NFTs[i].name);
-    console.log("Shirt: \t" + NFTs[i].shirt);
-    console.log("Pants: " + NFTs[i].pants);
-    console.log("Shoes: \t\t " + NFTs[i].shoes);
+    console.log("\nID:  "+ (i+1))
+    console.log("Name:  "+ NFTs[i].name);
+    console.log("Shirt: " + NFTs[i].Shirt);
+    console.log("Pants: " + NFTs[i].Pants);
+    console.log("Shoes: " + NFTs[i].Shoes);
  }
 }
 
@@ -37,9 +37,8 @@ console.log(NFTs.length);
 }
 
 // call your functions below this line
-mintNFT("Fhiel","Blue","Hoodie","Gold Chain");
-mintNFT("Nichole","Blue","Hoodie","Gold Chain");
-mintNFT("Ashley","Blue","Hoodie","Gold Chain");
-mintNFT("John","Blue","Hoodie","Gold Chain");
+mintNFT("Fhiel","CDG","Chrome Heart","Travis Low");
+mintNFT("Nichole","Adidas","Levis","Paris Dunks");
+mintNFT("Ashley","Nike","Guess","Freddy Krugers");
 listNFTs();
 getTotalSupply();
